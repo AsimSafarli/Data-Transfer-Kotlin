@@ -3,7 +3,7 @@ package com.asimsafar.lesson8.Features.newProduct
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class AddPostViewModel: ViewModel() {
+class AddProductViewModel: ViewModel() {
 
     val name = MutableLiveData<String>()
     val code = MutableLiveData<String>()

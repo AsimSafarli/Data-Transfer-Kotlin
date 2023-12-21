@@ -1,4 +1,4 @@
-package com.islamzada.project2.features.model
+package com.asimsafar.lesson8.Model
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

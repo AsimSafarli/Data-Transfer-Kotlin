@@ -9,26 +9,25 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.lifecycle.ViewModelProvider
 import com.asimsafar.lesson8.R
 import com.asimsafar.lesson8.databinding.ActivityAddProductBinding
-import com.asimsafar.lesson8.databinding.ActivityMainBinding
-import com.islamzada.project2.features.model.Product
 import com.asimsafar.lesson8.MainViewModel
+import com.asimsafar.lesson8.Model.Product
 
 class AddProductActivity : AppCompatActivity() {
     lateinit var binding: ActivityAddProductBinding
-    lateinit var viewModel: AddPostViewModel
+    lateinit var viewModel: AddProductViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityAddProductBinding.inflate(layoutInflater)
 
-        viewModel = ViewModelProvider(this)[AddPostViewModel::class.java]
+        viewModel = ViewModelProvider(this).get(AddProductViewModel::class.java)
 
         binding = ActivityAddProductBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
         binding.lifecycleOwner = this
-        binding.viewModel= viewModel
+//        binding.viewModel = viewModel
     }
 
     override fun onResume() {
